@@ -1,0 +1,20 @@
+%{
+    int count=0;
+%}
+
+%%
+
+vijay  count++;
+(.|\n)    ;
+
+%%
+
+int yywrap(){}
+
+int main()
+{
+   printf("enter string with the vijay::");
+    yylex();
+    printf("Count of \"vijay\"= %d \n",count);  
+    return 0;
+}
