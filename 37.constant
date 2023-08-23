@@ -1,0 +1,18 @@
+%{
+%}
+
+%%
+
+[0-9]+ {printf("\n constant valid\n");}
+.+ {printf("\n constant invalid\n");}
+
+%%
+
+int yywrap()
+{}
+
+int main()
+{
+printf("\n enter the constant value:");
+yylex();
+}
